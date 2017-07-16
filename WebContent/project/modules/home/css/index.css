@@ -1,0 +1,322 @@
+@CHARSET "UTF-8";
+.wrapper{
+	width:1200px;
+	margin:0 auto;
+}
+
+.wrapper .step-container{
+	list-style:none;
+}
+.title-card{
+	width:48px;
+	height:170px;
+	color:white;
+	background:url("../../../resource/images/title_card.png") center no-repeat;
+}
+.step-container{
+	width:805px;
+	height:299px;
+	background:url("../../../resource/images/step_content_bg.png") center no-repeat;
+}
+
+.step-container .step{
+	width:80px;
+	border-right:1px dotted #dfdfdf;
+	margin:70px 0 30px 0;
+	padding:0 40px;
+	text-align:center;
+}
+.step-container .step:last-child{
+	border-right:0px dotted #dfdfdf;
+}
+
+.step-container .step .text-container{
+	margin-top:60px;
+	transition: all 0.15s ease;/*使用css3动画*/
+}
+/* step元素获取鼠标焦点时的样式*/
+/*使用css3动画绘制动画*/
+.step-container .step:hover .text-container{
+	margin-top:20px;
+}
+
+.step-container .step .lookup{
+	line-height: 0px;
+	height:0px;
+	margin-top:20px;
+	background: #008973;
+	border-radius: 3px;
+	color:white;
+	font-size:14px;
+	transition: all 0.15s ease;/*使用css3动画*/
+}
+/*使用css3动画绘制动画*/
+.step-container .step:hover .lookup{
+	line-height: 32px;
+	height:32px;
+}
+/*鼠标放li上面，让图片发生变化*/
+.step-container .step:hover .key-icon{
+	background:url("../../../resource/images/key_icon_hover.png") center no-repeat;
+}
+
+.step-container .step:hover .appoint-dept-icon{
+	background:url("../../../resource/images/appoint_dept_icon_hover.png") center no-repeat;
+}
+.step-container .step:hover .appoint-doctor-icon{
+	background:url("../../../resource/images/appoint_doctor_icon_hover.png") center no-repeat;
+}
+.step-container .step:hover .appoint-date-icon{
+	background:url("../../../resource/images/appoint_date_icon_hover.png") center no-repeat;
+}
+.step-container .step:hover .appoint-complete-icon{
+	background:url("../../../resource/images/appoint_complete_icon_hover.png") center no-repeat;
+}
+
+.key-icon{
+	background:url("../../../resource/images/key_icon.png") center no-repeat;
+	width: 80px;
+	height: 80px;
+}
+.appoint-dept-icon{
+	background:url("../../../resource/images/appoint_dept_icon.png") center no-repeat;
+	width: 80px;
+	height: 80px;
+}
+.appoint-doctor-icon{
+	background:url("../../../resource/images/appoint_doctor_icon.png") center no-repeat;
+	width: 80px;
+	height: 80px;
+}
+.appoint-date-icon{
+	background:url("../../../resource/images/appoint_date_icon.png") center no-repeat;
+	width: 80px;
+	height: 80px;
+}
+.appoint-complete-icon{
+	background:url("../../../resource/images/appoint_complete_icon.png") center no-repeat;
+	width: 80px;
+	height: 80px;
+}
+
+.phone-appoint{
+	background: url("../../../resource/images/phone_appoint_gate_bg.png") center no-repeat;
+	width: 316px;
+    height: 299px;
+    color:#059981;
+}
+
+.key-icon-hover{
+	background:url("../../../resource/images/key_icon_hover.png") center no-repeat;
+}
+.appoint-dept-icon-hover{
+	background:url("../../../resource/images/appoint_dept_icon_hover.png") center no-repeat;
+}
+.appoint-doctor-icon-hover{
+	background:url("../../../resource/images/appoint_doctor_icon_hover.png") center no-repeat;
+}
+.appoint-date-icon-hover{
+	background:url("../../../resource/images/appoint_date_icon_hover.png") center no-repeat;
+}
+.appoint-complete-icon-hover{
+	background:url("../../../resource/images/appoint_complete_icon_hover.png") center no-repeat;
+}
+.phone-appoint-hover{
+	background: url("../../../resource/images/phone_appoint_gate_bg_hover.png") center no-repeat;
+}
+
+.phone-appoint .on-service{
+	border-top: 1px solid #E5E5E5;
+	color:#999;
+}
+/*中间部分*/
+.middle-container{
+	width:862px;
+	height:590px;
+	margin-top:14px;
+}
+.middle-top{
+	height:260px;
+}
+.middle-top-left{
+	width:48px;
+	height:170px;
+	background:url("../images/title_card.png");
+	color:white;
+}
+.middle-top-right{
+	width:804px;
+}
+.middle-top-right ul li{
+	list-style:none;
+}
+.middle-top-right .module{
+	width:155px;
+	height:258px;
+	float:left;
+	border:1px solid #E5E5E5;
+	border-radius:5px;
+	cursor:pointer;
+}
+.middle-top-right .module:hover{
+	border:1px solid #059981;
+}
+.module img{
+	width:155px;
+	height:200px;
+}
+.text-content{
+	margin-left:20px;
+	line-height:30px;
+	margin-top:-30px;
+}
+.border{
+	width:144px;
+	height:255px;
+	margin-top:-5px;
+	margin-right:-6px;
+}
+.text-content1{
+	width:144px;
+	height:126px;
+	border:1px solid #E5E5E5;
+	margin-top:5px;
+	border-radius:5px;
+}
+.text-content1:hover{
+	border:1px solid #059981;
+}
+.text-content1 div{
+	text-align:center;
+	line-height:30px;
+}
+.middle-bottom-t{
+	width:48px;
+	height:170px;
+	background:url("../images/title_card.png");
+}
+.title-card-text{/*此处可以使字竖着展示*/
+	width:16px;
+	margin:0 auto;
+	padding:65px 0 0;
+	line-height:18px;
+	font-size:16px;
+	color:white;
+}
+.middle-bottom-m{
+	width:471px;
+	height:314px;
+	border:1px solid #e5e5e5;
+	margin-left:15px;
+	border-radius:5px;
+}
+.middle-bottom-b{
+	border:1px solid #e5e5e5;
+	width:318px;
+	height:314px;
+	margin-left:5px;
+	border-radius:5px;
+	background:url("../images/home_banner.png");
+}
+.middle-bottom-b:hover{
+	border:1px solid #059981;
+}
+.news-t{
+	width:439px;
+	height:30px;
+	margin:20px 0 10px 15px;
+	padding-bottom:10px;
+	border-bottom:1px solid #e5e5e5;
+}
+.news-t-span{
+	margin-top:10px;
+	color:#059981;
+}
+.news-m{
+	width:439px;
+	height:80px;
+	margin-left:20px;
+	border-bottom:1px solid #e5e5e5;
+}
+.news-m-text{
+	width:297px;
+	margin-left:20px;
+	line-height:40px;
+}
+.news-b{
+	margin-top:20px;
+	margin-left:40px;
+	line-height:30px;
+}
+.news-b li:hover{
+	color:#059981;
+}
+.middle-container-left{
+	width:316px;
+	height:588px;
+	border:1px solid #e5e5e5;
+	margin: 14px 0 80px 11px;
+	border-radius:5px;
+}
+.middle-container-left ul li{
+	list-style:none;
+}
+.title{
+	width:255px;
+	height:61px;
+	line-height:61px;
+	text-align:center;
+	padding:0 14px 0 14px;
+	color:#059981;
+	margin-left:15px;
+	margin-right:15px;
+	border-bottom:1px dashed #ccc; 
+}
+.line{
+	border-top:3px solid #a9a9a9;
+	width:40px;
+	margin-top:30px;
+	margin-left:15px;
+}
+.theme{
+	padding:0 0 0 20px;
+}
+.sort{
+	width:286px;
+	height:519px;
+	padding:0 14px 0 14px;
+}
+.undefined{
+	width:286px;
+	height:80px;
+	padding-bottom:14px;
+	margin-bottom:10px;
+	margin-top:10px;
+	border-bottom:1px solid #e5e5e5;
+}
+.doctor img{
+	width:56px;
+	height:76px;
+}
+.diploma-top{
+	margin-left:15px;
+	line-height:20px;
+}
+.diploma-top div{
+	margin-left:10px;
+}
+.name{
+	font-size:18px;
+	font-weight:bold;
+	margin-top:-3px;
+	line-height:40px;
+}
+.doc{
+	font-size:12px;
+	color:#a9a9a9;
+	margin-top:-1px;
+	line-height:40px;
+}
+.diploma-bottom{
+    margin-left:28px;	
+}

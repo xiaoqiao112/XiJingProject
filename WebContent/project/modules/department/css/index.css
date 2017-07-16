@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+html,body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.dept-top{
+	border: 1px solid #dfdfdf;
+	border-radius:5px;
+}
+.short-desc{
+	width: 700px;
+}
+.fun-text{
+	color:#059981;
+}
+.read-more{
+	text-decoration: none;
+	color:#059981;
+}
+/*绘制tab标签页*/
+.tab{
+	border-bottom: 1px solid #dfdfdf;
+	list-style:none;
+	/**当子元素使用left和top去定位时，参考对象即为该对象**/
+	position:relative;/*父元素*/
+}
+/*添加鼠标滑动样式*/
+ /* .border{子元素
+	border-bottom:solid 3px #059981;
+	position:absolute;
+	width:131px;
+	top:60px;
+	left:40px;
+} */
+/*添加鼠标滑动样式*/
+.tab li.line{
+	position: absolute;
+	left:2px;
+	top:60px;
+	width:124px;
+	height:0px;
+	border-bottom: 3px solid #059981;
+}
+
+.tab li.active{
+	color:#059981;
+	/*border-bottom: 3px solid #059981;*/
+}
+/*绘制医院简介*/
+.desc{
+	border: 1px solid #dfdfdf;
+	border-radius:5px;
+}
+.desc .title{
+	margin: 60px auto;
+	width: 280px;
+} 
+.desc .title .line{
+	height:0;
+	width:90px;
+	border-bottom:1px solid #dfdfdf;
+	margin-top: 14px;
+} 
+
+.desc p{
+	text-indent: 2em;
+	font-size:14px;
+	line-height:210%;
+	letter-spacing:1px;
+} 
+/*绘制科室列表 */
+.dept-list{
+	border: 1px solid #dfdfdf;
+	border-radius:5px;
+}
+.dept-list ul{
+	list-style:none;
+}
+
+.dept-list .dept-name{
+	width:62px;
+}
+
+.dept-list > ul > li{
+	border-bottom:1px dotted #dfdfdf;
+}
+
+.dept-list > ul > li:last-child{
+	border-bottom:0px dotted #dfdfdf;
+}
+
+.dept-list > ul > li li{
+	cursor:pointer;
+}
+
+.dept-list > ul > li li:hover{
+	color:#059981;
+}
+
+.dept-list > ul > li ul{
+	width: 993px;
+}

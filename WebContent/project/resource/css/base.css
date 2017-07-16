@@ -1,0 +1,198 @@
+@charset "UTF-8";
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-family:微软雅黑;
+}
+/**padding**/
+.pad-r-5{
+	padding-right: 5px;	
+}
+.pad-r-20{
+	padding-right:20px;
+}
+.pad-r-40{
+	padding-left:40px;
+}
+.pad-r-60{
+	padding-left:60px;
+}
+.pad-l-40{
+	padding-left:40px;
+}
+.pad-l-5{
+	padding-left:5px;
+}
+.pad-l-10{
+	padding-left:10px;
+}
+.pad-l-37{
+	padding-left:37px;
+}
+.pad-l-20{padding-left:20px;}
+.pad-lr-5{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.pad-lr-20{
+	padding-left:20px;
+	padding-right:20px;
+}
+.pad-lr-10{
+	padding-left:10px;
+	padding-right:10px;
+}
+.pad-t-20{
+	padding-top:20px;
+}
+.pad-t-30{
+	padding-top:30px;
+}
+.pad-all-20{
+	padding: 20px;
+}
+.pad-tb-20{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.pad-tb-14{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.pad-lr-30{
+	padding-left:30px;
+	padding-right:30px;
+}
+.pad-lr-50{padding-left:50px;padding-right:50px}
+.padding-b{
+	padding-bottom:25px;
+}
+.pad-b-20{padding-bottom:20px}
+.pad-b-80{padding-bottom:80px}
+
+/**font**/
+.font12{font-size:12px;}
+.font13{font-size:13px;}
+.font14{font-size: 14px;}
+.font16{font-size: 16px;}
+.font18{font-size: 18px;}
+.font20{font-size:20px;}
+.font-w-b{font-weight: bold;}
+.font-weight{font-weight:normal;}
+.center{text-align:center;}
+.text-indent{text-indent:2em;}
+/**line-height**/
+/* lineh前缀代表样式内部会声明height和line-height，用于修饰单行文本情况， */
+/* line-h前缀代表样式内部仅声明line-height,用于修饰多行文本情况 */
+.line-h12{line-height: 12px;}
+.line-h24{line-height: 24px;}
+.line-h16{line-height:16px;}
+.lineh30{
+	line-height: 30px;
+	height: 30px;
+}
+.lineh40{
+	line-height: 40px;
+	height: 40px;
+}
+.lineh44{
+	line-height: 44px;
+	height: 44px;
+}
+.lineh50{
+	line-height: 50px;
+	height: 50px;
+}
+.lineh56{
+	line-height: 56px;
+	height: 56px;
+}
+
+.line-h150{
+	line-height:150%;
+}
+.line-h38{
+	line-height:38px;
+}
+.lineh27{
+	line-height:27px;
+}
+.lineh-32{line-height:32px;}
+/**margin**/
+.mar-t-14{margin-top:14px;}
+.mar-t-20{margin-top:20px;}
+.mar-t-30{margin-top:30px;}
+.mar-t-40{margin-top:40px;}
+.mar-t-50{margin-top:50px;}
+.mar-t-60{margin-top:60px;}
+.mar-t--12{margin-top:-12px;}
+.mar-t-65{margin-top:65px;}
+.mar-tb-30{margin-top:30px;margin-bottom:30px;}
+.mar-tb-20{margin-top:20px;margin-bottom:20px;}
+.mar-lr-5{margin-left:5px;margin-right:5px;}
+.mar-lr-10{margin-left:10px;margin-right:10px;}
+.mar-lr-20{margin-left:20px;margin-right:20px;}
+.mar-lr-16{margin-left:16px;margin-right:16px;}
+.mar-l-30{margin-left:30px;}
+.mar-l-20{margin-left:20px;}
+.mar-l-5{margin-left:5px;}
+.mar-l-10{margin-left:10px;}
+.mar-b-15{margin-bottom:20px;}
+.mar-b-5{margin-bottom:5px;}
+.mar-b-12{margin-bottom:12px;}
+.mar-b-60{margin-bottom:60px;}
+.mar-b-80{margin-bottom:80px;}
+.mar-r-20{margin-right:20px;}
+.mar-r-10{margin-right:10px;}
+.mar-r-43{margin-right:43px;}
+.mar-b-14{margin-bottom:14px;}
+/**浮动基础样式**/
+.float-l{
+	float:left;
+}
+.float-r{
+	float:right;
+}
+
+/**宽度基础样式**/
+.w50{width: 50%}
+
+/**
+**css的伪类，帮助清除浮动
+* 是在当前dom元素的子元素的最后位置放置一个div
+*/
+.clear:after{
+	clear:both;
+	content:"";
+	height:0px;
+	visibility:hidden;/*内容不显示，但是页面上还是会占用空间*/
+	display:block;/*按照块状元素展示*/
+}
+.clear {
+	/*IE7,IE8 下面清除浮动*/
+    zoom: 1;
+}
+.text-a-c{
+	text-align:center;	
+}
+.cursor-p{cursor:pointer;}
+
+.hidden{
+	display:none;
+}
+/*下面这句会导致li中的点去掉*/
+.text-ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/*颜色设置*/
+.color-333{
+	color:#333;
+}
+.color-999{
+	color:#999;
+}
+/*边框设置*/
+ .border-r-dashed-1{
+	border-right: 1px dashed #E5E5E5;
+	
+}

@@ -1,0 +1,20 @@
+<!-- 声明html代码片段的编码方式为UTF-8，这样浏览器加载这个html片段时，不会出现乱码问题 -->
+<!-- 循环的部分用其包起来 -->
+<!-- {{level}} level 即可以是数值或字符串，也可以是函数，函数的返回值会填充到这里 -->
+<!-- 通过对img onerror设置默认图片，当src加载不到用户图片时(或是照片出错时)，将会自动加载默认图片(此种方法很常用，要学会) -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 将.jsp中循环的部分写在下面，将属性用{{}}表示，即可以动态切换到前台页面 -->
+{{#datas}}
+<li class="undefined">
+	<!-- <div class="doctor float-l"><img src="images/{{sexImg}}.png"></div> --><!-- 此处是性别图片 -->
+	 <div class="doctor float-l"><img onerror="this.src='/xijing/project/resource/images/{{defaultImg}}.png'" src="{{img}}"></div> 
+	     <div class="diploma float-l">
+				<div class="diploma-top">
+					<div class="imgss float-l"><img src="images/level{{level}}.png"></div><!-- 此处是奖牌 -->
+						<div class="name float-l">{{doctorName}}</div>
+		                <div class="doc float-l">{{doctorTitle}}</div>
+		            </div>
+		   <div class="diploma-bottom">{{deptName}}</div>
+	</div>
+</li>
+{{/datas}}

@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+//主文件入口
+requirejs.config({//此处是全局配置
+	baseUrl:'/xijing/project/modules/schedule/',//先将项目里的一个文件引入(根路径)
+	paths:{//根路径下的剩余全部路径,去掉.js后缀
+		text:'../../common/lib/requirejs/text',
+		render:'js/render',//再将文件中.js的渲染文件引入
+		datasource:'js/datasource'
+	}
+});
+//Amd程序主函数
+require(['render'],function(RenderService){//(页面启动函数)请求文件内容
+	RenderService.init();
+})

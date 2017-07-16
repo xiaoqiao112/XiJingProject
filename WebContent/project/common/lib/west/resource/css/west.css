@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+/*对ul设置样式*/
+.calendar-ul-container{
+	list-style:none;
+	font-family:微软雅黑;
+	height:40px;
+	float:left;
+	margin:0 10px 0 0;
+	padding:0;
+}
+/*对li设置样式*/
+.calendar-ul-container li{
+	float:left;
+	margin-right:30px;
+}
+/*对li里的日期设置样式*/
+.calendar-ul-container li .calendar-date{
+	color:#888;
+	font-size:12px;
+	margin-top:2px;
+}
+/*对li里的星期设置样式*/
+.calendar-ul-container li .calendar-week{
+	color:#6B6B6B;
+	font-size:14px;
+	font-weight:bold;
+	margin-top:6px;
+}
+/*对.calendar-last-btn设置*/
+.calendar-last-btn{
+	margin-right:40px;
+}
+/*对两个背景图片设置*/
+.calendar-last-btn,.calendar-next-btn{
+	width:26px;
+	height:26px;
+	float:left;
+	margin-top:9px;
+}
+/*六个图片*/
+.calendar-lastbtn-disable-icon{
+	background-image:url("../images/last_s_disable.png");
+	cursor:not-allowed;
+}
+.calendar-nextbtn-disable-icon{
+	background-image:url("../images/next_s_disable.png");
+	cursor:not-allowed;
+}
+.calendar-lastbtn-enable-icon{
+	background-image:url("../images/last_s_enable.png");
+	cursor:pointer;
+}
+.calendar-nextbtn-enable-icon{
+	background-image:url("../images/next_s_enable.png");
+	cursor:pointer
+}
+.calendar-lastbtn-hover-icon{
+	background-image:url("../images/last_s_h.png");
+}
+.calendar-nextbtn-hover-icon{
+	background-image:url("../images/next_s_h.png");
+}
+/*排班样式*/
+.am-container,.pm-container{
+	list-style:none;
+	height:60px;
+	line-height:60px;
+	margin:0;
+	padding:0;
+	font-family:微软雅黑;
+}
+.am-container li,.pm-container li{
+	float:left;
+}
+.am-container{
+	border-bottom:1px solid #eee;
+}
+.am-container li.text,.pm-container li.text{
+	margin-left:8px;
+	margin-right:17px;
+	color:#aaa;
+	font-size:14px;
+}
+.am-container li.schedule-disable,.pm-container li.schedule-disable{
+	margin-right:18px;
+	margin-top:5px;
+}
+/*没有排班*/
+.schedule-disable{
+	background-image:url(../images/disable_circle.png);
+	width:50px;
+	height:53px;
+}
+/*预约*/
+.schedule-enable{
+	background-image:url(../images/enable_circle.png);
+	position:relative;
+}
+/*鼠标放上去*/
+.schedule-enable-hover{
+	background-image:url(../images/enable_circle_hover.png);
+}
+/*约满*/
+.schedule-booked{
+	background-image:url(../images/appoint_booked.png);
+}
+/*停诊*/
+.schedule-out-service{
+	background-image:url(../images/out_service.png);
+}
+/*添加挂号费*/
+.schedule-tooltip{
+	position:absolute;
+	z-index:10;
+	height:64px;
+	width:166px;
+	line-height:70px;
+	font-size:14px;
+	text-align:center;
+	background-image:url(../images/tooltip_bg.png);
+	display:none;
+}

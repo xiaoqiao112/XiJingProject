@@ -1,0 +1,15 @@
+<!-- 声明html代码片段的编码方式为UTF-8，这样浏览器加载这个html片段时，不会出现乱码问题 -->
+<!-- 循环的部分用其包起来 -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+{{#datas}}
+<li class="mar-tb-20 clear">
+	<div class="dept-name float-l">{{name}}</div>
+	<div class="float-l">
+		<ul class="clear">
+			{{#depts}}
+			<li class="float-l mar-r-20 mar-b-14">{{name}}</li>
+			{{/depts}}
+		</ul>
+	</div>
+</li>
+{{/datas}}
